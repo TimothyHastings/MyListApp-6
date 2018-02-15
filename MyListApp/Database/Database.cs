@@ -28,11 +28,12 @@ namespace MyListApp
 		public static void SaveModel()
 		{
 			ItemDB.SaveAll();
+            UserDB.SaveAll();
 
 			//	Reload so we have item ids which are allocate by the DB.
 			ItemDB.LoadAll();
 
-			UserDB.SaveAll();
+			
 		}
 
 	}
